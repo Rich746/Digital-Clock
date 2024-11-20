@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+}
+
+.clock {
+    width: 800px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 100px 100px rgba(0, 0, 0, 0.5);
+}
+
+.clock span {
+    font-size: 80px;
+    width: 100px;
+    display: inline-block;
+    position: relative;   
+}
+.clock span::after {
+    font-size: 16px;
+    position: absolute;
+    transform: translate(-50%);
+    bottom: -5px;
+    left: 50%;
+}
+
+#hrs::after {
+    content: 'HOURS';
+}
+#mins::after {
+    content: 'MINS';
+}
+#secs::after {
+    content: 'SECS';
+}
